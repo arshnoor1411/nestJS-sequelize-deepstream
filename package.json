@@ -22,11 +22,14 @@
     "seed:generate": "npx sequelize-cli seed:generate --name"
   },
   "dependencies": {
+    "@deepstream/server": "^7.0.2",
+    "@deepstream/storage-postgres": "^3.0.4",
     "@nestjs/apollo": "^10.2.0",
     "@nestjs/common": "^9.0.0",
     "@nestjs/config": "^2.3.1",
     "@nestjs/core": "^9.0.0",
     "@nestjs/graphql": "^10.2.0",
+    "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/sequelize": "^9.0.0",
     "apollo-server-core": "^3.11.1",
@@ -35,7 +38,8 @@
     "joi": "^17.8.3",
     "pg": "^8.9.0",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "ts-morph": "^17.0.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

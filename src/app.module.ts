@@ -9,6 +9,7 @@ import { join } from 'path';
 import { Dialect } from 'sequelize';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { AppService } from './app.service';
         path: join(process.cwd(), 'src/graphql.ts'),
       },
     }),
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
